@@ -22,12 +22,6 @@ namespace Monopoly
             }
         }
 
-        public void InitialiseMap()
-        {
-            #region Holly's initialiseMap methods
-
-            #endregion
-        }
 
         public RollingDie InitialiseDie()
         {
@@ -42,8 +36,26 @@ namespace Monopoly
             List<decimal> playerMoneys = new List<decimal>();
             //List<string> playerNames = new List<string>();
             //Player player;
-
-            Console.Write("Welcome to Monopoly, please input the number of players: ");
+            Console.WriteLine(@"                                                                                                   
+                                             &&&&&(%                                               
+                                             #@&@%                                               
+                                    .*   ***@@@&@@%%@%,      ,*                                    
+                               *   *** *  **///&@@//,,*   **@                                      
+                              ,**  *****  ****,,,,.,,,%% ., #/                                     
+                            **, *  *****  *@&,.,     @@& *,*** ****                                
+                         *  *,, *  *****..@*,,*/*,.@,. / *,,*  * *  * *                            
+                                          %*,,,&(&&                                                
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%**,.%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
+%#%%%%%%%%%%%%%%(%%%%%%%%%%%%%%%%%%%%%%%%%%%**/%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%#%  
+%%%%%, %%%%%%%%. %%%,       .%%& ,%%%%%. .%%,        %%&       %%%(        %%&  .%%%.  %%%&  .%%%
+%%%%&   %%%%%&   %&  ,%%%%&.  %&   ,%%%, ,%  ,%%%%&&  .&  *%%&  %,  &%%%%&  .&  ,%%%%&  .&  ,%%%%  
+%%%%&    (%%&    %* *%%%%%%%, .&  #  *%* ,*  %%%%%%%#  &  /%%,  &  %%%%%%%&  &  ,%%%%%&*   ,%%%%%  
+%%%%&  &  */  &  **  %%%%%%%  ,&  %%&  * *&  %%%%%%%,  &      *%&  #%%%%%%,  &  *%%%%%%&. ,%%%%%%  
+%%%%*  %&,   %%, ,&*  /%%%*  ,%&  %%%%&  *%*  ,%%%*   %&  *%%%%%%&   #%%*   %&  *%%%%#%,  %%%%%%%  
+%%%%* *%%%/*%%%&  %%&/     *%%%&  %%%%%%&*%%&&     *&%%&  /%%%%%%%&&*    *&%%&       %*  %%%%%%%%  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&");
+            Console.Write("\n\nWelcome to Monopoly, please input the number of players: ");
             int playerNumberInInt;
 
             while (true)
@@ -74,7 +86,7 @@ namespace Monopoly
             Console.Write("In this game ");
             foreach (Player playerInPlayers in players)
             {
-                //Console.WriteLine(playerInPlayers.GetPlayerName());
+                
                 if (playerInPlayers == players.First())
                 {
                     Console.Write($"{playerInPlayers.GetPlayerName()}");
@@ -92,7 +104,7 @@ namespace Monopoly
             Console.WriteLine();
 
             int startPlayerId = ChooseStartPlayer(playerNumberInInt);
-            Console.WriteLine($"This game starts with player{startPlayerId + 1}: {players[startPlayerId].GetPlayerName()}");
+            
             players = players.OrderBy(a => Guid.NewGuid()).ToList();
             Player firstPlayer = players[startPlayerId];
             players.Remove(players[startPlayerId]);

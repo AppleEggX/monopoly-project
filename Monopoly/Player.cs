@@ -13,6 +13,7 @@ namespace Monopoly
         public int MoneyBalance { get; protected set; }
         public int PlayerID { get; protected set; }
         public int CurrentTileIndex { get; set; }
+        public List<Tile> ownedProperties { get; set; }
 
 
         public Player(string playerName)
@@ -21,6 +22,7 @@ namespace Monopoly
             MoneyBalance = 1000;
             AddPlayer();
             CurrentTileIndex = 0;
+            ownedProperties = new List<Tile>();
 
         }
 
@@ -30,7 +32,7 @@ namespace Monopoly
             SetPlayerID(playerID);
             MoneyBalance = 1000;
             AddPlayer();
-
+            ownedProperties = new List<Tile>();
         }
 
         public string GetPlayerName()

@@ -5,3 +5,15 @@ C:\Users\jarrod.beedle\Documents\CSharpWorkspace\Monopoly Project\monopoly-proje
 C:\Users\jarrod.beedle\Documents\CSharpWorkspace\Monopoly Project\monopoly-project\Monopoly\obj\Debug\Monopoly.csproj.CoreCompileInputs.cache
 C:\Users\jarrod.beedle\Documents\CSharpWorkspace\Monopoly Project\monopoly-project\Monopoly\obj\Debug\Monopoly.exe
 C:\Users\jarrod.beedle\Documents\CSharpWorkspace\Monopoly Project\monopoly-project\Monopoly\obj\Debug\Monopoly.pdb
+D:\GitFDM\monopoly-project\Monopoly\bin\Debug\Monopoly.exe.config
+D:\GitFDM\monopoly-project\Monopoly\bin\Debug\Monopoly.exe
+D:\GitFDM\monopoly-project\Monopoly\bin\Debug\Monopoly.pdb
+D:\GitFDM\monopoly-project\Monopoly\obj\Debug\Monopoly.csprojAssemblyReference.cache
+D:\GitFDM\monopoly-project\Monopoly\obj\Debug\Monopoly.exe
+D:\GitFDM\monopoly-project\Monopoly\obj\Debug\Monopoly.pdb
+D:\Coding\GitFDM\monopoly-project\Monopoly\bin\Debug\Monopoly.exe.config
+D:\Coding\GitFDM\monopoly-project\Monopoly\bin\Debug\Monopoly.exe
+D:\Coding\GitFDM\monopoly-project\Monopoly\bin\Debug\Monopoly.pdb
+D:\Coding\GitFDM\monopoly-project\Monopoly\obj\Debug\Monopoly.csprojAssemblyReference.cache
+D:\Coding\GitFDM\monopoly-project\Monopoly\obj\Debug\Monopoly.exe
+D:\Coding\GitFDM\monopoly-project\Monopoly\obj\Debug\Monopoly.pdb

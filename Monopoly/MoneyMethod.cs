@@ -13,7 +13,7 @@ namespace Monopoly
             if (tile is Utility)
             {
                 Utility tileUtility = (Utility)tile;
-                int utilityAmount = tileUtility.tileRentValue;                
+                int utilityAmount = tileUtility.getRent();                
                 playerTo.ChangeBalance(utilityAmount);
                 playerFrom.ChangeBalance(-utilityAmount);
             }
